@@ -6,3 +6,11 @@
 
 
 import Foundation
+//Identifiable - Each message is uniqely identifed from the id
+
+struct Message:Identifiable , Codable {
+    var id:String
+    var text:String
+    var received:Bool
+    var timestamp:Date
+}

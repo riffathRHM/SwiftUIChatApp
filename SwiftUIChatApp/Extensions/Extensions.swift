@@ -4,15 +4,23 @@
 // Created by Mohamed Riffath on  9/29/24.
 
 
-
+import Foundation
 import SwiftUI
 
-struct Extensions: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//Extension for adding rounde radious to specific corners
+extension View {
+    func cornerRadius(_ radius:CGFloat , corners:UIRectCorner) -> some View {
+        clipShape(RoundedCorner(radius: radius,corners: corners))
     }
 }
 
-#Preview {
-    Extensions()
+//Custom RoundedCorner shape used for cornerRadius extension above
+struct RoundedCorner:Shape {
+    var radius:CGFloat = .infinity
+    var corners:UIRectCorner = .allCorners
+    
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
 }

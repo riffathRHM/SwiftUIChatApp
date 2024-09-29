@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6E7DD22CA90A2800C5285E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DD12CA90A2800C5285E /* Message.swift */; };
+		CE6E7DD42CA90B4B00C5285E /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DD32CA90B4B00C5285E /* MessageBubble.swift */; };
+		CE6E7DD72CA91A8F00C5285E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DD62CA91A8F00C5285E /* Extensions.swift */; };
 		CE95DEE12CA1CC5000317D8F /* SwiftUIChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95DEE02CA1CC5000317D8F /* SwiftUIChatAppApp.swift */; };
 		CE95DEE32CA1CC5000317D8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95DEE22CA1CC5000317D8F /* ContentView.swift */; };
 		CE95DEE52CA1CC5200317D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE95DEE42CA1CC5200317D8F /* Assets.xcassets */; };
 		CE95DEE82CA1CC5200317D8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE95DEE72CA1CC5200317D8F /* Preview Assets.xcassets */; };
+		CEBAED6A2CA86410007762B3 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAED692CA86410007762B3 /* TitleRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE6E7DD12CA90A2800C5285E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CE6E7DD32CA90B4B00C5285E /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		CE6E7DD62CA91A8F00C5285E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE95DEDD2CA1CC5000317D8F /* SwiftUIChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE95DEE02CA1CC5000317D8F /* SwiftUIChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChatAppApp.swift; sourceTree = "<group>"; };
 		CE95DEE22CA1CC5000317D8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE95DEE42CA1CC5200317D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE95DEE72CA1CC5200317D8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEBAED692CA86410007762B3 /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE6E7DD02CA909FE00C5285E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E7DD12CA90A2800C5285E /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE6E7DD52CA91A6000C5285E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E7DD62CA91A8F00C5285E /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CE95DED42CA1CC5000317D8F = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +77,9 @@
 			children = (
 				CE95DEE02CA1CC5000317D8F /* SwiftUIChatAppApp.swift */,
 				CE95DEE22CA1CC5000317D8F /* ContentView.swift */,
+				CE6E7DD02CA909FE00C5285E /* Models */,
+				CEBAED682CA850BA007762B3 /* Components */,
+				CE6E7DD52CA91A6000C5285E /* Extensions */,
 				CE95DEE42CA1CC5200317D8F /* Assets.xcassets */,
 				CE95DEE62CA1CC5200317D8F /* Preview Content */,
 			);
@@ -65,6 +92,15 @@
 				CE95DEE72CA1CC5200317D8F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEBAED682CA850BA007762B3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAED692CA86410007762B3 /* TitleRow.swift */,
+				CE6E7DD32CA90B4B00C5285E /* MessageBubble.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE95DEE32CA1CC5000317D8F /* ContentView.swift in Sources */,
+				CE6E7DD72CA91A8F00C5285E /* Extensions.swift in Sources */,
+				CE6E7DD22CA90A2800C5285E /* Message.swift in Sources */,
+				CE6E7DD42CA90B4B00C5285E /* MessageBubble.swift in Sources */,
 				CE95DEE12CA1CC5000317D8F /* SwiftUIChatAppApp.swift in Sources */,
+				CEBAED6A2CA86410007762B3 /* TitleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +314,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIChatApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChatApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +343,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIChatApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChatApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
