@@ -22,6 +22,7 @@ struct ContentView: View {
             }
             .padding(.top,10)
             .background(.white)
+            .cornerRadius(30, corners: [.topLeft,.bottomRight])
         }
         .background(Color("Peach"))
     }

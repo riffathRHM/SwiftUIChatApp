@@ -10,6 +10,7 @@
 		CE6E7DD22CA90A2800C5285E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DD12CA90A2800C5285E /* Message.swift */; };
 		CE6E7DD42CA90B4B00C5285E /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DD32CA90B4B00C5285E /* MessageBubble.swift */; };
 		CE6E7DD72CA91A8F00C5285E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DD62CA91A8F00C5285E /* Extensions.swift */; };
+		CE6E7DD92CA94BAF00C5285E /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E7DD82CA94BAF00C5285E /* MessageField.swift */; };
 		CE95DEE12CA1CC5000317D8F /* SwiftUIChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95DEE02CA1CC5000317D8F /* SwiftUIChatAppApp.swift */; };
 		CE95DEE32CA1CC5000317D8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95DEE22CA1CC5000317D8F /* ContentView.swift */; };
 		CE95DEE52CA1CC5200317D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE95DEE42CA1CC5200317D8F /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		CE6E7DD12CA90A2800C5285E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CE6E7DD32CA90B4B00C5285E /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 		CE6E7DD62CA91A8F00C5285E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CE6E7DD82CA94BAF00C5285E /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 		CE95DEDD2CA1CC5000317D8F /* SwiftUIChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE95DEE02CA1CC5000317D8F /* SwiftUIChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChatAppApp.swift; sourceTree = "<group>"; };
 		CE95DEE22CA1CC5000317D8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				CEBAED692CA86410007762B3 /* TitleRow.swift */,
 				CE6E7DD32CA90B4B00C5285E /* MessageBubble.swift */,
+				CE6E7DD82CA94BAF00C5285E /* MessageField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				CE95DEE32CA1CC5000317D8F /* ContentView.swift in Sources */,
 				CE6E7DD72CA91A8F00C5285E /* Extensions.swift in Sources */,
 				CE6E7DD22CA90A2800C5285E /* Message.swift in Sources */,
+				CE6E7DD92CA94BAF00C5285E /* MessageField.swift in Sources */,
 				CE6E7DD42CA90B4B00C5285E /* MessageBubble.swift in Sources */,
 				CE95DEE12CA1CC5000317D8F /* SwiftUIChatAppApp.swift in Sources */,
 				CEBAED6A2CA86410007762B3 /* TitleRow.swift in Sources */,
