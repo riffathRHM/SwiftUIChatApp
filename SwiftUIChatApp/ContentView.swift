@@ -15,7 +15,7 @@ struct ContentView: View {
         VStack {
             VStack{
                 TitleRow()
-                
+                ScrollViewReader { proxy in
                 ScrollView{
                     ForEach(messagesManager.messages,id:\.id){ message in
                         MessageBubble(message:message)
@@ -24,10 +24,17 @@ struct ContentView: View {
                 .padding(.top,10)
                 .background(.white)
                 .cornerRadius(30, corners: [.topLeft,.topRight])
+                .onChange (of:messagesManager.lastMessageId){ id in
+                    withAnimation {
+                        proxy.scrollTo(id,anchor:.bottom)
+                    }
+                }
+            }
                 
             }
             .background(Color("Peach"))
             MessageField()
+                .environmentObject(MessagesManager())
         }//Main VStack
     }
 }
