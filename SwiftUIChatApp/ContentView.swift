@@ -9,22 +9,26 @@ import SwiftUI
 
 
 struct ContentView: View {
-    
+    @StateObject var messagesManager = MessagesManager()
     var messageArray = ["Hello you","How are you doign?","I' have been building applications from scratch, and its so fun"]
     var body: some View {
         VStack {
-           TitleRow()
-        
-            ScrollView{
-                ForEach(messageArray,id:\.self){ text in
-                    MessageBubble(message: Message(id: "12345", text: text, received: true, timestamp: Date()))
+            VStack{
+                TitleRow()
+                
+                ScrollView{
+                    ForEach(messagesManager.messages,id:\.id){ message in
+                        MessageBubble(message:message)
+                    }
                 }
+                .padding(.top,10)
+                .background(.white)
+                .cornerRadius(30, corners: [.topLeft,.topRight])
+                
             }
-            .padding(.top,10)
-            .background(.white)
-            .cornerRadius(30, corners: [.topLeft,.bottomRight])
-        }
-        .background(Color("Peach"))
+            .background(Color("Peach"))
+            MessageField()
+        }//Main VStack
     }
 }
 
